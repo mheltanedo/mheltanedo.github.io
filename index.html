@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>Personal Web</title>
+<style>
+body{
+	margin:0;
+	padding:0;
+	font-family:Arial;	
+}
+
+nav {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:90px;
+	padding:10px 80px;
+	box-sizing:border-box;
+	background: linear-gradient(360deg, #1C1C1C 10%, #494949 360%);
+}
+
+nav .logo{
+	padding:30px 24px;
+	height:80px;
+	float:left;
+	font-size:20px;
+	font-weight:bold;
+	color:#fff; 
+	font-family:Courier;
+	letter-spacing:6px;
+}
+
+nav ul {
+	list-style:none;
+	float:right;
+	margin:0;
+	padding:0;
+	display:flex;
+}
+
+nav ul li a {
+	line-height:80px;
+	color:#fff;
+	padding:12px 30px;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:18px;
+	font-weight:bold;
+	font-family:Arial;
+}
+
+nav ul li a:hover{
+	background:#808080;
+	border-radius:10px;
+	color:#000;
+
+}
+
+
+.bg {
+	background-image:url(background.jpg);
+	background-blend-mode: darken,luminosity;
+	background-size: cover;
+	background-position: center;
+	width:100%;
+	height:100%;
+	padding: relative;
+	bottom:100px;
+}
+
+.content {
+	width:100%;
+	position:fixed;
+	top:45%;
+	transform:translateY(-50%);
+	text-align:center;
+	color:black;
+}
+
+.content h1{
+	font-size: 55px;
+	margin-top:80px;
+	font-family:monospace;
+	color:white;
+	position:static;
+}
+
+button {
+	width:200px;
+	padding:15px 0;
+	text-align:center;
+	margin:20px 10px;
+	border-radius:25px;
+	font-weight:bold;
+	border: 2px solid #009688;
+	background: transparent;
+	color:black;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	font-weight:bold;
+
+}
+
+span {
+	background: #009688;
+	height:100%;
+	width:0;
+	border-radius:25px;
+	position:absolute;
+	left:0;
+	bottom:0;
+	z-index:-1;
+	transition:0.5s;
+}
+
+button:hover span{
+	width:100%;
+}
+
+button:hover{
+	border:none;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+	<nav>
+		<div class="logo">  Mhel Tañedo </div>
+			<ul>
+				<li><a href="./Finals.html">Home</a></li>
+				<li><a href="./aboutme.html">About me</a></li>
+				<li><a href="./contacts.html" title="social/contacts">Socials</a></li>
+			</ul>
+	</nav>
+</div>
+<div class="bg">
+	<div class="content">
+		<h1>LEARN MORE ABOUT ME</h1>
+			<br>
+				<div>
+					<a href="./aboutme.html">
+						<button type="button" ><span></span> About Me </button>
+					</a>
+				</div>
+	</div>
+</div>
+</body>
+</html>
