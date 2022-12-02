@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<head>
+<title>About Me </title>
+<style>
+body{
+	margin:0;
+	padding:0;
+	font-family:Arial;	
+}
+
+nav {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:90px;
+	padding:10px 80px;
+	box-sizing:border-box;
+	background: linear-gradient(360deg, #1C1C1C 10%, #494949 360%);
+}
+
+nav .logo{
+	padding:30px 24px;
+	height:80px;
+	float:left;
+	font-size:20px;
+	font-weight:bold;
+	color:#fff; 
+	font-family:Courier;
+	letter-spacing:6px;
+}
+
+nav ul {
+	list-style:none;
+	float:right;
+	margin:0;
+	padding:0;
+	display:flex;
+}
+
+nav ul li a {
+	line-height:80px;
+	color:#fff;
+	padding:12px 30px;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:18px;
+	font-weight:bold;
+	font-family:Arial;
+}
+
+nav ul li a:hover{
+	background:#808080;
+	border-radius:10px;
+	color:#000;
+
+}
+
+.me {
+	width:100%;
+	margin:auto;
+	padding-top:100px;
+	background:linear-gradient(#f5f5f5,#e5e4e2);
+}
+
+.picture{
+	width:550px;
+	height:500px;	
+	
+}
+
+.picture img {
+	height:100%;
+	width:100%;
+	padding-left:100px;
+}
+	
+.me h1{
+	float:right;
+	padding-right:200px;
+	padding-top:100px;
+	font-size:50px;
+	font-family:Arial;
+	color:#303030;
+	
+}
+
+.me p {
+	margin:auto;
+	float:right;
+	padding-right:310px;
+	font-style:italic;
+	font-weight:bold;
+	font-family:Arial;
+	color:#404040;
+	font-size:23px;
+}
+
+.aboutme {
+	width:80%;
+	margin:auto;
+	text-align:center;
+}
+
+.aboutme h1{
+	font-size:50px;
+	font-family:'Trebuchet MS', sans-serif;
+	color:#FFA500;
+	text-shadow:2px 1px black;
+}
+
+.aboutme h4{
+	font-size:20px;
+	font-family:'Trebuchet MS', sans-serif;
+	font-weight:normal;
+}
+
+.aboutme p{
+	text-align:justify;
+	font-family:'Trebuchet MS', sans-serif;
+	font-size:17px;
+	color:#3F3F3F;
+}
+
+.educ {
+	width:100%;
+	margin:auto;
+	background:linear-gradient(to right,#f5f5f5,#FAF9F6);
+	text-align:center;
+	padding-bottom:20px;
+}
+
+.educ h1{
+	font-size:50px;
+	font-family:'Trebuchet MS', sans-serif;
+	color:#FFA500;
+	text-shadow:2px 1px black;
+	padding-top:20px;
+}
+
+.row {
+	margin:5%;
+	display:flex;
+	justify-content:space-between;
+	font-family:'Trebuchet MS', sans-serif;
+}
+
+.educ-col{
+	flex-basis: 31%;
+	background:#eddada;
+	border-radius:10px;
+	margin-bottom:5%;	
+}
+
+.educ-col h2{
+	font-size:30px;
+}
+
+.educ-col p{
+	font-size:20px;
+}
+
+.hobbies {
+	width:100%;
+	margin:auto;
+	padding-bottom:100px;
+}
+
+.hobbies h1{
+	font-size:50px;
+	font-family:'Trebuchet MS', sans-serif;
+	color:#FFA500;
+	text-shadow:2px 1px black;
+	padding-left:600px;
+}
+
+.game{
+	padding-bottom:20px;
+	padding-left:100px;
+	display:flex;
+	justify-content: space-between;
+}
+
+.game img{
+	height:250px;
+	border-radius:10px;
+	display:flex
+	left:100px;
+}
+
+.game h2{
+	font-size:45px;
+	font-family:Arial;
+	color:#303030;
+	text-align:center;
+}
+.game p{
+	font-weight:bold;
+	font-family:Arial;
+	font-family:'Trebuchet MS', sans-serif;
+	margin:10%;
+	text-align:justify;
+}
+
+.watch{
+	padding-bottom:20px;
+	padding-left:100px;
+	display:flex;
+	justify-content: space-between;
+}
+
+.watch img{
+	height:250px;
+	border-radius:10px;
+	display:flex;
+	left:100px;
+}
+
+.watch h2{
+	font-size:45px;
+	font-family:Arial;
+	color:#303030;
+	text-align:center;
+}
+.watch p{
+	font-weight:bold;
+	font-family:Arial;
+	font-family:'Trebuchet MS', sans-serif;
+	margin:10%;
+	text-align:justify;
+}
+
+.tkd{
+	padding-left:100px;
+	display:flex;
+	justify-content: space-between;
+}
+
+.tkd img{
+	height:250px;
+	border-radius:10px;
+	display:flex;
+	left:100px;
+}
+
+.tkd h2{
+	font-size:45px;
+	font-family:Arial;
+	color:#303030;
+	text-align:center;
+}
+.tkd p{
+	font-weight:bold;
+	font-family:Arial;
+	font-family:'Trebuchet MS', sans-serif;
+	margin:10%;
+	text-align:justify;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+	<nav>
+		<div class="logo"> Mhel Tañedo </div>
+			<ul>
+				<li><a href="./Finals.html" title="Home">Home</a></li>
+				<li><a href="./aboutme.html"title="about me">About me</a></li>
+				<li><a href="./contacts.html" title="social/contacts">Socials</a></li>
+			</ul>
+	</nav>
+</div>
+<section class="me">
+<h1> Hello! I'm Mhel Tañedo </h1>
+	<p>Aspiring Computer Programmer</p>
+		<div class="picture">
+			<img src="guypoint.png" alt="guy pointing himself"></img>
+		</div>
+</section>
+<section class="aboutme">
+	<h1> About Me.</h1>
+		<h4>My name is Mhel Daniel A. Tañedo and I'm an aspiring Computer Programmer.</h4>
+			<p> Hi, my name is Mhel Daniel Tañedo and I am currently a college sophomore. I have been at ICCT Colleges for about a year now;
+				I joined at the start as a freshmen, and have thoroughly enjoyed myself here. The school is great, the people are 
+				fantastic and the atmosphere is one that makes you actually want to go to school. I was born and raised in Antipolo city and grew up there.</p>
+			<p>I am an interesting, fun loving guy with a good sense of humor. 
+				One thing about me that is important to know though is that at first I come of as a very shy individualistic guy but once I get to 
+				know people and are comfortable with my environment I am great.It is hard for me to make friends but once I make them, 
+				it’s great and I am all different. I joke, laugh and humor people and I also get as much as I give. I am a very kind, compassionate, 
+				sensitive guy as my close friends will tell you. I have a tough shell but on the inside I am soft. 
+				I am also a very principled person and stand strong on what is right and wrong. I am also a very straight and honest person. 
+				I understand and know that we all put on a show sometimes and do not show who we really are or what we feel but some people do this 
+				constantly and those kinds of people I cannot stand. </p>	
+</section>
+<section class="educ">
+	<h1>Education.</h1>
+		<div class="row">
+			<div class="educ-col">
+			<h2>Kindergarden - Primary<h2>
+			<p>sy. 2007 - 2014</p>
+			<p>OLOPSC</p>			
+			</div>
+			<div class="educ-col">
+			<h2>Secondary<h2>
+			<p>sy. 2015 - 2021</p>
+			<p>MHS - NCLC</p>
+			</div>	
+			<div class="educ-col">
+			<h2>Tertiary<h2>
+			<p>sy. 2022 - Present</p>
+			<p>ICCT Colleges</p>
+			</div>				
+		</div>
+</section>
+<section class="hobbies">
+	<h1>Hobbies.</h1>
+		<div class="game">
+		<div class="text">
+		<h2>Videogame</h2>
+		<p> 
+		If it is my free time, or should I say, most of the time I always play videogame takes up all my time all day whenever there is no work
+		to do.
+		</div>
+			<img src ="gaming.jpg" alt="gaming boy"></img>
+		</p>
+		</div>		
+		<div class="watch">
+		<div class="text">
+		<h2>Watching Series</h2>
+		<p> 
+		Apart from playing videogames, I like watching series, from anime to tv series such as dramas, and be entertained all day.			
+		</div>
+		<img src ="watching.jpg" alt="watching boy"></img>
+		</p>
+		</div>
+		<br><br>
+		<div class="tkd">
+		<div class="text">
+		<h2>Taekwondo</h2>
+		<p> 
+		When I was a kid I used to practice Taekwondo and got to reach blue belt, which can be considered as middle class, and then I stopped going because I got tired of it and I realized I have no talent for it.
+		</div>
+		<img src ="tkd.jpg" alt="tkd boy"></img>
+		</p>
+		</div>
+</section>
+</body>
+</html>
